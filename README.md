@@ -9,7 +9,7 @@ Site web officiel du restaurant réunionnais **La Case Toupin**.
 
 Service midi et soir &mdash; cuisine créole, plats à emporter, traiteur événementiel.
 
-📞 06 88 65 47 97
+Téléphone : 06 88 65 47 97
 
 ## Stack technique
 
