@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Mentions légales, politique de confidentialité et conditions générales de vente — La Case Toupin, restaurant réunionnais à Saint-Gaudens." />
+<meta name="robots" content="index, follow" />
+<title>Mentions légales &mdash; La Case Toupin</title>
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF6F0;
+    --volcano: #1F4D3A;
+    --volcano-dark: #163828;
+    --paprika: #C2410C;
+    --sand: #D4A574;
+    --text: #1A1A1A;
+    --text-soft: #5C5C5C;
+    --border: #E8E2D7;
+    --surface: #FFFFFF;
+    --font-title: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  /* HEADER */
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .logo img { height: 46px; width: auto; display: block; border-radius: 6px; }
+  .back-link {
+    color: var(--volcano);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+  }
+  .back-link:hover { color: var(--paprika); }
+
+  /* HERO */
+  .legal-hero {
+    background: var(--volcano);
+    color: #fff;
+    padding: 72px 24px 56px;
+    text-align: center;
+  }
+  .legal-hero h1 {
+    font-family: var(--font-title);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .legal-hero p {
+    font-size: 1.05rem;
+    opacity: 0.85;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin: -32px auto 56px;
+    max-width: 720px;
+    box-shadow: 0 6px 20px rgba(31, 77, 58, 0.06);
+    position: relative;
+  }
+  .toc h2 {
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    color: var(--volcano);
+    margin-bottom: 14px;
+  }
+  .toc ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+  .toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: inline-block;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .toc a:hover { color: var(--paprika); border-bottom-color: var(--paprika); }
+
+  @media (max-width: 600px) {
+    .toc ul { grid-template-columns: 1fr; }
+  }
+
+  /* SECTIONS */
+  main { padding-bottom: 80px; }
+
+  section.legal-section {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 40px 32px;
+    margin-bottom: 28px;
+    border: 1px solid var(--border);
+  }
+  section.legal-section h2 {
+    font-family: var(--font-title);
+    font-size: 1.7rem;
+    color: var(--volcano);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  section.legal-section .section-overline {
+    display: block;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--paprika);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  section.legal-section h3 {
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+    color: var(--volcano-dark);
+    margin: 32px 0 12px;
+    font-weight: 500;
+  }
+  section.legal-section p { margin-bottom: 14px; color: var(--text); }
+  section.legal-section ul { padding-left: 22px; margin-bottom: 14px; }
+  section.legal-section li { margin-bottom: 6px; }
+  section.legal-section strong { color: var(--volcano-dark); font-weight: 600; }
+
+  .info-table {
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 16px;
+    font-size: 0.94rem;
+  }
+  .info-table dt { color: var(--text-soft); font-weight: 500; }
+  .info-table dd { color: var(--text); }
+
+  @media (max-width: 600px) {
+    .info-table { grid-template-columns: 1fr; gap: 4px; padding: 18px; }
+    .info-table dt { color: var(--volcano); font-weight: 600; margin-top: 8px; }
+    section.legal-section { padding: 28px 22px; }
+  }
+
+  .alert-rgpd {
+    background: rgba(194, 65, 12, 0.06);
+    border-left: 3px solid var(--paprika);
+    border-radius: 0 10px 10px 0;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 0.94rem;
+  }
+  .alert-rgpd strong { color: var(--paprika); }
+
+  /* FOOTER */
+  .legal-footer {
+    background: var(--volcano);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 32px 24px;
+    text-align: center;
+    font-size: 0.88rem;
+  }
+  .legal-footer a { color: var(--sand); text-decoration: none; }
+  .legal-footer a:hover { text-decoration: underline; }
+  .legal-footer .meta { font-size: 0.78rem; opacity: 0.7; margin-top: 14px; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="assets/logo.jpg" alt="La Case Toupin" /></a>
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>
+      Retour au site
+    </a>
+  </div>
+</header>
+
+<div class="legal-hero">
+  <div class="container">
+    <h1>Mentions légales</h1>
+    <p>Conformément à la loi pour la confiance dans l'économie numérique (LCEN) du 21 juin 2004 et au Règlement Général sur la Protection des Données (RGPD).</p>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="toc" aria-label="Sommaire">
+    <h2>Sommaire</h2>
+    <ul>
+      <li><a href="#editeur">1. Éditeur du site</a></li>
+      <li><a href="#exploitant">2. Exploitant &amp; contenus commerciaux</a></li>
+      <li><a href="#hebergement">3. Hébergement</a></li>
+      <li><a href="#propriete">4. Propriété intellectuelle</a></li>
+      <li><a href="#confidentialite">5. Politique de confidentialité</a></li>
+      <li><a href="#cookies">6. Cookies</a></li>
+      <li><a href="#cgv">7. Conditions générales de vente</a></li>
+      <li><a href="#mediation">8. Médiation de la consommation</a></li>
+      <li><a href="#droit">9. Droit applicable</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main class="container">
+
+  <!-- 1. ÉDITEUR DU SITE -->
+  <section class="legal-section" id="editeur">
+    <span class="section-overline">Article 1</span>
+    <h2>Éditeur du site</h2>
+
+    <p>Le présent site internet est édité, conçu, hébergé et maintenu par&nbsp;:</p>
+
+    <dl class="info-table">
+      <dt>Raison sociale</dt>
+      <dd>Nine Technologies</dd>
+      <dt>Exploitant</dt>
+      <dd>Marc-Antoine Pavadé, Entrepreneur Individuel (EI)</dd>
+      <dt>Adresse</dt>
+      <dd>17 rue du Docteur Laennec, 31800 Saint-Gaudens, France</dd>
+      <dt>Téléphone</dt>
+      <dd><a href="tel:+33604114284" style="color:var(--paprika);text-decoration:none;">06 04 11 42 84</a></dd>
+      <dt>Email</dt>
+      <dd><a href="mailto:marc-antoine@ninetechnologies.fr" style="color:var(--paprika);text-decoration:none;">marc-antoine@ninetechnologies.fr</a></dd>
+      <dt>Site</dt>
+      <dd><a href="https://ninetechnologies.fr" target="_blank" rel="noopener" style="color:var(--paprika);text-decoration:none;">ninetechnologies.fr</a></dd>
+      <dt>SIRET</dt>
+      <dd>918 444 316 00049</dd>
+      <dt>Code APE / NAF</dt>
+      <dd>6202A — Conseil en systèmes et logiciels informatiques</dd>
+      <dt>Régime fiscal</dt>
+      <dd>Micro-entreprise &mdash; <strong>TVA non applicable, art. 293 B du Code général des impôts</strong></dd>
+      <dt>Directeur de la publication</dt>
+      <dd>Marc-Antoine Pavadé</dd>
+    </dl>
+
+    <p>Nine Technologies assure, dans le cadre d'un abonnement de maintenance souscrit par l'exploitant, l'hébergement, les sauvegardes, les mises à jour de sécurité et les évolutions techniques du site. À ce titre, Nine Technologies est l'éditeur du site au sens de l'article 6-III de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN).</p>
+
+    <p>Conformément à la loi n° 2022-172 du 14 février 2022 en faveur de l'activité professionnelle indépendante, la mention <strong>«&nbsp;EI&nbsp;»</strong> figure aux côtés du nom de l'éditeur.</p>
+  </section>
+
+  <!-- 2. EXPLOITANT -->
+  <section class="legal-section" id="exploitant">
+    <span class="section-overline">Article 2</span>
+    <h2>Exploitant du site &amp; responsable des contenus commerciaux</h2>
+
+    <p>Les contenus commerciaux publiés sur le présent site (carte, prix, photographies de plats, descriptions, horaires, offres traiteur, données de l'établissement) sont fournis et tenus à jour par l'exploitant, qui en est seul responsable&nbsp;:</p>
+
+    <dl class="info-table">
+      <dt>Nom commercial</dt>
+      <dd>La Case Toupin</dd>
+      <dt>Raison sociale</dt>
+      <dd>Madame Marie Natacha OREO épouse TOUPIN, Entrepreneur Individuel (EI)</dd>
+      <dt>Adresse établissement</dt>
+      <dd>1 rue du Pradet, 31800 Saint-Gaudens, France</dd>
+      <dt>Téléphone</dt>
+      <dd><a href="tel:+33688654797" style="color:var(--paprika);text-decoration:none;">06 88 65 47 97</a></dd>
+      <dt>Email</dt>
+      <dd>Communiqué sur demande au 06 88 65 47 97</dd>
+      <dt>SIREN</dt>
+      <dd>802 848 846</dd>
+      <dt>SIRET (siège)</dt>
+      <dd>802 848 846 00043</dd>
+      <dt>Code APE / NAF</dt>
+      <dd>5610C — Restauration de type rapide</dd>
+      <dt>RCS</dt>
+      <dd>Toulouse</dd>
+      <dt>Régime fiscal</dt>
+      <dd>Micro-entreprise &mdash; <strong>TVA non applicable, art. 293 B du Code général des impôts</strong></dd>
+    </dl>
+
+    <p>L'exploitant est responsable de la véracité et de la conformité réglementaire des informations commerciales (prix affichés, allergènes, horaires, descriptifs). L'éditeur ne saurait être tenu responsable d'une inexactitude des contenus commerciaux fournis par l'exploitant.</p>
+  </section>
+
+  <!-- 3. HÉBERGEMENT -->
+  <section class="legal-section" id="hebergement">
+    <span class="section-overline">Article 3</span>
+    <h2>Hébergement</h2>
+
+    <p>L'infrastructure d'hébergement est mise en œuvre par l'éditeur via le prestataire suivant&nbsp;:</p>
+
+    <dl class="info-table">
+      <dt>Société</dt>
+      <dd>Vercel Inc.</dd>
+      <dt>Adresse</dt>
+      <dd>340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</dd>
+      <dt>Site</dt>
+      <dd><a href="https://vercel.com" target="_blank" rel="noopener" style="color:var(--paprika);text-decoration:none;">vercel.com</a></dd>
+    </dl>
+
+    <p>Vercel Inc. dispose des certifications de sécurité requises (SOC 2 Type II, ISO 27001) et applique les Clauses Contractuelles Types de la Commission européenne pour les transferts de données hors UE.</p>
+  </section>
+
+  <!-- 4. PROPRIÉTÉ INTELLECTUELLE -->
+  <section class="legal-section" id="propriete">
+    <span class="section-overline">Article 4</span>
+    <h2>Propriété intellectuelle</h2>
+
+    <p>La propriété des éléments figurant sur le site se répartit comme suit&nbsp;:</p>
+
+    <h3>4.1 — Éléments propriété de l'éditeur</h3>
+    <p>Le code source, l'architecture technique, le design, la composition graphique, la charte d'interface et les éléments d'expérience utilisateur du site sont la propriété exclusive de Nine Technologies. L'exploitant en bénéficie sous forme d'une licence d'exploitation non exclusive et non transférable, accordée pour la durée de l'abonnement de maintenance.</p>
+
+    <h3>4.2 — Éléments propriété de l'exploitant</h3>
+    <p>Les contenus commerciaux propres à l'établissement &mdash; logo «&nbsp;La Case Toupin&nbsp;», nom commercial, photographies de plats, descriptions des produits, recettes, textes de présentation de la maison &mdash; sont la propriété exclusive de Madame Marie TOUPIN. L'exploitant concède à l'éditeur une licence d'utilisation non exclusive de ces éléments pour les seuls besoins de la publication du site.</p>
+
+    <h3>4.3 — Reproduction</h3>
+    <p>Toute reproduction, représentation, modification, publication, transmission ou exploitation, totale ou partielle, par quelque procédé que ce soit, sans autorisation écrite préalable des titulaires des droits, est strictement interdite et constituerait une contrefaçon sanctionnée par les articles L335-2 et suivants du Code de la propriété intellectuelle.</p>
+  </section>
+
+  <!-- 5. POLITIQUE DE CONFIDENTIALITÉ -->
+  <section class="legal-section" id="confidentialite">
+    <span class="section-overline">Article 5</span>
+    <h2>Politique de confidentialité &mdash; RGPD</h2>
+
+    <p>Conformément au Règlement (UE) 2016/679 du 27 avril 2016 (RGPD) et à la loi Informatique et Libertés n° 78-17 du 6 janvier 1978 modifiée, la présente politique précise comment vos données personnelles sont collectées et traitées.</p>
+
+    <h3>5.1 — Responsable du traitement et sous-traitant</h3>
+    <p><strong>Responsable du traitement</strong>&nbsp;: Madame Marie TOUPIN, exerçant en nom propre sous l'enseigne «&nbsp;La Case Toupin&nbsp;», 1 rue du Pradet, 31800 Saint-Gaudens. C'est l'exploitant de l'établissement qui détermine les finalités et les moyens du traitement de vos données.</p>
+
+    <p><strong>Sous-traitant technique au sens de l'article 28 du RGPD</strong>&nbsp;: Nine Technologies (Marc-Antoine Pavadé EI), qui met à disposition l'infrastructure du site, applique les mesures techniques de sécurité et exécute les sauvegardes sur instruction documentée du responsable du traitement, dans le cadre d'un contrat de sous-traitance (DPA) signé entre les Parties.</p>
+
+    <h3>5.2 — Données collectées et finalités</h3>
+    <p>Les données personnelles sont collectées dans les cas suivants&nbsp;:</p>
+    <ul>
+      <li><strong>Formulaire de devis traiteur</strong>&nbsp;: nom, prénom, email, téléphone, date de l'événement, nombre de personnes, message libre &mdash; pour répondre à votre demande de devis.</li>
+      <li><strong>Commande Click &amp; Collect</strong>&nbsp;: nom, prénom, email, téléphone, créneau de retrait, données de paiement (traitées exclusivement par Stripe) &mdash; pour exécuter votre commande.</li>
+      <li><strong>Avis Google Business Profile</strong>&nbsp;: les avis publiés via votre compte Google sont régis par la politique de confidentialité de Google.</li>
+    </ul>
+
+    <h3>5.3 — Bases légales du traitement</h3>
+    <ul>
+      <li><strong>Exécution d'un contrat</strong> (art. 6.1.b RGPD) pour les commandes et devis.</li>
+      <li><strong>Consentement</strong> (art. 6.1.a RGPD) pour les formulaires non contractuels.</li>
+      <li><strong>Obligation légale</strong> (art. 6.1.c RGPD) pour la conservation comptable.</li>
+    </ul>
+
+    <h3>5.4 — Durée de conservation</h3>
+    <ul>
+      <li>Données prospects (devis non aboutis)&nbsp;: <strong>3 ans</strong> à compter du dernier contact.</li>
+      <li>Données clients (commandes exécutées)&nbsp;: <strong>3 ans</strong> à compter de la fin de la relation commerciale.</li>
+      <li>Données comptables et factures&nbsp;: <strong>10 ans</strong> conformément aux articles L123-22 et L102 B du Code de commerce et du LPF.</li>
+    </ul>
+
+    <h3>5.5 — Destinataires et sous-traitants</h3>
+    <p>Vos données sont traitées par les sous-traitants suivants, liés par un contrat conforme à l'article 28 du RGPD&nbsp;:</p>
+    <ul>
+      <li><strong>Nine Technologies</strong> (Marc-Antoine Pavadé EI, Saint-Gaudens) &mdash; sous-traitant technique principal&nbsp;: hébergement, maintenance, sauvegardes, sécurité du site.</li>
+      <li><strong>Vercel Inc.</strong> &mdash; sous-traitant ultérieur d'hébergement (États-Unis, Clauses Contractuelles Types).</li>
+      <li><strong>Stripe Payments Europe Ltd.</strong> &mdash; traitement des paiements en ligne (Irlande).</li>
+      <li><strong>Google Ireland Ltd.</strong> &mdash; fiche Google Business Profile et avis (Irlande).</li>
+    </ul>
+
+    <h3>5.6 — Vos droits</h3>
+    <p>Conformément aux articles 15 à 22 du RGPD, vous disposez des droits suivants&nbsp;:</p>
+    <ul>
+      <li>Droit d'<strong>accès</strong> à vos données.</li>
+      <li>Droit de <strong>rectification</strong> des données inexactes.</li>
+      <li>Droit à l'<strong>effacement</strong> («&nbsp;droit à l'oubli&nbsp;»).</li>
+      <li>Droit à la <strong>limitation</strong> du traitement.</li>
+      <li>Droit à la <strong>portabilité</strong> des données.</li>
+      <li>Droit d'<strong>opposition</strong> au traitement.</li>
+      <li>Droit de définir des <strong>directives post-mortem</strong> relatives à vos données.</li>
+    </ul>
+
+    <p>Pour exercer ces droits, adressez votre demande au responsable du traitement (l'exploitant) au <a href="tel:+33688654797" style="color:var(--paprika);text-decoration:none;">06 88 65 47 97</a> ou par courrier à l'adresse de l'établissement.</p>
+
+    <div class="alert-rgpd">
+      <strong>Réclamation auprès de la CNIL.</strong> Si vous estimez que le traitement de vos données ne respecte pas la réglementation, vous pouvez introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés &mdash; <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:var(--paprika);text-decoration:none;">www.cnil.fr</a>, 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, tél. <a href="tel:+33153732222" style="color:var(--paprika);text-decoration:none;">01 53 73 22 22</a>.
+    </div>
+
+    <h3>5.7 — Sécurité</h3>
+    <p>L'éditeur (Nine Technologies) met en œuvre, en sa qualité de sous-traitant technique, les mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité adapté au risque, conformément à l'article 32 du RGPD&nbsp;: chiffrement HTTPS/TLS, contrôle d'accès, sauvegardes régulières, journalisation des accès aux données sensibles, mises à jour de sécurité dans le cadre de l'abonnement de maintenance.</p>
+  </section>
+
+  <!-- 6. COOKIES -->
+  <section class="legal-section" id="cookies">
+    <span class="section-overline">Article 6</span>
+    <h2>Politique des cookies</h2>
+
+    <p>Le présent site utilise uniquement des <strong>cookies strictement nécessaires</strong> au fonctionnement (sécurité, panier de commande, préférences de langue). Ces cookies sont exemptés du recueil de consentement préalable conformément à l'article 82 de la loi Informatique et Libertés et à la délibération n° 2020-091 de la CNIL.</p>
+
+    <p>Aucun cookie tiers de mesure d'audience non exempté ou de publicité comportementale n'est déposé sans votre consentement explicite.</p>
+
+    <p>Vous pouvez à tout moment configurer votre navigateur pour refuser ou supprimer les cookies. Cette opération peut limiter certaines fonctionnalités du site.</p>
+  </section>
+
+  <!-- 7. CGV -->
+  <section class="legal-section" id="cgv">
+    <span class="section-overline">Article 7</span>
+    <h2>Conditions générales de vente</h2>
+
+    <p>Les présentes Conditions Générales de Vente régissent les ventes effectuées par <strong>l'exploitant</strong> (Madame Marie TOUPIN, La Case Toupin) au public consommateur via le présent site. L'éditeur du site (Nine Technologies) n'est pas partie aux contrats de vente conclus.</p>
+
+    <h3>7.1 — Champ d'application</h3>
+    <p>Les présentes CGV s'appliquent à toute commande passée auprès de La Case Toupin via le service Click &amp; Collect du site, ainsi qu'aux prestations de service traiteur faisant l'objet d'un devis particulier.</p>
+
+    <h3>7.2 — Prix</h3>
+    <p>Les prix sont indiqués en euros, toutes taxes comprises (TTC). En application de l'article 293 B du CGI, la TVA n'est pas applicable. Le total à régler est strictement égal au montant hors taxes affiché.</p>
+
+    <h3>7.3 — Commande Click &amp; Collect</h3>
+    <p>La commande est validée à la réception du paiement intégral via le prestataire Stripe. Un email de confirmation est adressé à l'acheteur indiquant le créneau de retrait choisi. Le retrait s'effectue à l'adresse de l'établissement&nbsp;: 1 rue du Pradet, 31800 Saint-Gaudens.</p>
+    <p>Toute commande non retirée à l'issue d'un délai de 2 heures suivant le créneau choisi sera réputée abandonnée et ne fera l'objet d'aucun remboursement, sauf force majeure dûment justifiée.</p>
+
+    <h3>7.4 — Service traiteur</h3>
+    <p>Les prestations traiteur font l'objet d'un devis personnalisé. Toute commande est confirmée par le versement d'un acompte de <strong>30&nbsp;%</strong> du montant total. Le solde est dû à la livraison ou à la prestation. Toute annulation moins de <strong>72 heures</strong> avant la prestation entraîne la conservation de l'acompte par l'exploitant.</p>
+
+    <h3>7.5 — Droit de rétractation</h3>
+    <p>Conformément à l'article L221-28 du Code de la consommation, le droit de rétractation de 14 jours <strong>ne s'applique pas</strong> aux contrats portant sur la fourniture&nbsp;:</p>
+    <ul>
+      <li>de biens susceptibles de se détériorer ou de se périmer rapidement (denrées alimentaires)&nbsp;;</li>
+      <li>de services pleinement exécutés avant la fin du délai de rétractation&nbsp;;</li>
+      <li>de prestations de services de restauration à fournir à une date ou à une période déterminée.</li>
+    </ul>
+
+    <h3>7.6 — Allergènes</h3>
+    <p>La Case Toupin met tout en œuvre pour informer ses clients de la présence d'allergènes dans ses préparations, conformément au Règlement (UE) n° 1169/2011 (INCO). En cas d'allergie ou d'intolérance, contactez la maison avant toute commande pour confirmation.</p>
+
+    <h3>7.7 — Réclamations</h3>
+    <p>Toute réclamation doit être adressée par téléphone au 06 88 65 47 97, ou par courrier à l'adresse de l'établissement, dans un délai raisonnable suivant la prestation.</p>
+  </section>
+
+  <!-- 8. MÉDIATION -->
+  <section class="legal-section" id="mediation">
+    <span class="section-overline">Article 8</span>
+    <h2>Médiation de la consommation</h2>
+
+    <p>Conformément aux articles L612-1 et suivants du Code de la consommation, en cas de litige consommation persistant après une réclamation écrite préalable adressée à l'éditrice, le consommateur peut saisir gratuitement le médiateur de la consommation suivant&nbsp;:</p>
+
+    <dl class="info-table">
+      <dt>Médiateur</dt>
+      <dd>SAS Médiation Solution</dd>
+      <dt>Adresse</dt>
+      <dd>222 chemin de la Bergerie, 01800 Saint-Jean-de-Niost</dd>
+      <dt>Site internet</dt>
+      <dd><a href="https://www.sasmediationsolution-conso.fr" target="_blank" rel="noopener" style="color:var(--paprika);text-decoration:none;">www.sasmediationsolution-conso.fr</a></dd>
+    </dl>
+
+    <p>Le consommateur dispose d'un délai d'un (1) an à compter de sa réclamation écrite préalable pour saisir le médiateur.</p>
+
+    <p>La Commission européenne met également à disposition une plateforme de règlement en ligne des litiges accessible à l'adresse&nbsp;: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener" style="color:var(--paprika);text-decoration:none;">ec.europa.eu/consumers/odr</a>.</p>
+  </section>
+
+  <!-- 9. DROIT APPLICABLE -->
+  <section class="legal-section" id="droit">
+    <span class="section-overline">Article 9</span>
+    <h2>Droit applicable et juridiction</h2>
+
+    <p>Les présentes mentions légales et conditions générales de vente sont régies par le droit français.</p>
+
+    <p>En cas de litige et à défaut d'accord amiable ou de saisine du médiateur, les juridictions du ressort de la Cour d'appel de Toulouse seront seules compétentes, sous réserve des dispositions impératives du Code de la consommation applicables aux consommateurs.</p>
+
+    <p style="margin-top: 24px; font-size: 0.88rem; color: var(--text-soft);">Dernière mise à jour&nbsp;: 1<sup>er</sup> mai 2026.</p>
+  </section>
+
+</main>
+
+<footer class="legal-footer">
+  <div class="container">
+    <p>&copy; 2026 La Case Toupin &mdash; Tous droits réservés.</p>
+    <p style="margin-top: 6px;">
+      <a href="index.html">Retour au site</a> &mdash;
+      <a href="#mentions">Sommaire</a>
+    </p>
+    <p class="meta">Document généré conformément à la LCEN du 21 juin 2004, au RGPD du 27 avril 2016 et au Code de la consommation.</p>
+  </div>
+</footer>
+
+</body>
+</html>

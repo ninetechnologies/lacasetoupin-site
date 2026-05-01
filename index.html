@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="La Case Toupin — Restaurant réunionnais à Saint-Gaudens. Rougail saucisses, carry poulet, carry poisson, carry crevette lait coco, traiteur créole pour vos événements. Click & Collect direct." />
+<meta name="author" content="La Case Toupin — Marie Toupin" />
+<meta name="robots" content="index, follow" />
+<title>La Case Toupin — Restaurant réunionnais à Saint-Gaudens</title>
+<link rel="icon" type="image/jpeg" href="assets/favicon.jpg" />
+<link rel="apple-touch-icon" href="assets/favicon.jpg" />
+
+<meta property="og:type" content="restaurant" />
+<meta property="og:title" content="La Case Toupin — Restaurant réunionnais à Saint-Gaudens" />
+<meta property="og:description" content="Cuisine créole authentique, traiteur événementiel et Click & Collect. 1 rue du Pradet, 31800 Saint-Gaudens. 06 88 65 47 97." />
+<meta property="og:image" content="assets/og-image.jpg" />
+<meta property="og:locale" content="fr_FR" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="La Case Toupin — Restaurant réunionnais Saint-Gaudens" />
+<meta name="twitter:description" content="Cuisine créole, traiteur, Click & Collect. 06 88 65 47 97." />
+<meta name="twitter:image" content="assets/og-image.jpg" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "La Case Toupin",
+  "image": "assets/devanture.jpg",
+  "logo": "assets/logo.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 rue du Pradet",
+    "addressLocality": "Saint-Gaudens",
+    "postalCode": "31800",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33688654797",
+  "servesCuisine": ["Réunionnaise", "Créole"],
+  "priceRange": "€€",
+  "sameAs": ["https://www.facebook.com/61571827814505"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF6F0;
+    --volcano: #1F4D3A;
+    --volcano-dark: #163828;
+    --piment: #C2410C;
+    --piment-hover: #9A3309;
+    --sable: #D4A574;
+    --sable-light: #E8C9A4;
+    --text: #1A1A1A;
+    --text-soft: #5A5A5A;
+    --border: #E8DFD0;
+    --surface: #FFFFFF;
+    --shadow-sm: 0 1px 3px rgba(31, 77, 58, 0.06);
+    --shadow-md: 0 6px 24px rgba(31, 77, 58, 0.10);
+    --shadow-lg: 0 18px 50px rgba(31, 77, 58, 0.16);
+    --font-title: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 22px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; text-decoration: none; }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-title);
+    color: var(--volcano);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ===== HEADER ===== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250, 246, 240, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .logo {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--volcano);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .logo span {
+    color: var(--piment);
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 28px;
+  }
+
+  .main-nav a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text);
+    transition: color 0.2s ease;
+    position: relative;
+  }
+
+  .main-nav a:hover {
+    color: var(--piment);
+  }
+
+  .main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--piment);
+    transition: width 0.25s ease;
+  }
+
+  .main-nav a:hover::after { width: 100%; }
+
+  .header-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--piment);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .header-cta:hover {
+    background: var(--piment-hover);
+    transform: translateY(-1px);
+  }
+
+  .header-cta svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--volcano);
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    background: #1F4D3A url('assets/hero-carry-crevette.jpg') center/cover no-repeat;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(22, 56, 40, 0.55) 0%, rgba(22, 56, 40, 0.78) 100%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 820px;
+    padding: 80px 24px;
+  }
+
+  .hero-overline {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--sable-light);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.4);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    color: #fff;
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+
+  .hero p {
+    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 400;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.25s ease;
+    font-family: var(--font-body);
+  }
+
+  .btn-primary {
+    background: var(--piment);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background: var(--piment-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(194, 65, 12, 0.4);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+  }
+
+  /* ===== SECTION GENERIC ===== */
+  section {
+    padding: 100px 0;
+  }
+
+  .section-overline {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--piment);
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 24px;
+  }
+
+  .section-intro {
+    color: var(--text-soft);
+    font-size: 1.05rem;
+    max-width: 640px;
+    margin-bottom: 48px;
+  }
+
+  .text-center { text-align: center; }
+  .text-center .section-intro { margin-left: auto; margin-right: auto; }
+
+  .ornament {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--sable);
+    margin: 28px auto;
+    position: relative;
+  }
+
+  .ornament::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--sable);
+    border-radius: 50%;
+    top: -3.5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* ===== HISTOIRE ===== */
+  .histoire {
+    background: var(--bg);
+  }
+
+  .histoire-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .histoire-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4 / 5;
+  }
+
+  .histoire-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .histoire-image:hover img {
+    transform: scale(1.04);
+  }
+
+  .histoire-image::after {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(212, 165, 116, 0.6);
+    border-radius: calc(var(--radius-lg) - 12px);
+    pointer-events: none;
+  }
+
+  .histoire-text p {
+    color: var(--text-soft);
+    margin-bottom: 18px;
+    font-size: 1.02rem;
+  }
+
+  .histoire-text .signature {
+    margin-top: 32px;
+    font-family: var(--font-title);
+    font-style: italic;
+    color: var(--volcano);
+    font-size: 1.1rem;
+  }
+
+  /* ===== CARTE ===== */
+  .carte {
+    background: linear-gradient(180deg, var(--bg) 0%, #F4EDE0 100%);
+  }
+
+  .plats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+  }
+
+  .plat-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .plat-image {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .plat-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .plat-card:hover .plat-image img {
+    transform: scale(1.06);
+  }
+
+  .plat-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--piment);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .plat-body {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .plat-name {
+    font-family: var(--font-title);
+    font-size: 1.35rem;
+    color: var(--volcano);
+    font-weight: 700;
+  }
+
+  .plat-price {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    color: var(--piment);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .plat-desc {
+    color: var(--text-soft);
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  /* ===== MAISONS ===== */
+  .maisons {
+    background: var(--bg);
+  }
+
+  .maisons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .maison-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .maison-map {
+    aspect-ratio: 16 / 10;
+    background: #E8DFD0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .maison-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .maison-locked {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, #1F4D3A 0%, #163828 100%);
+    color: var(--sable-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    gap: 12px;
+  }
+
+  .maison-locked svg {
+    width: 48px;
+    height: 48px;
+    color: var(--sable);
+  }
+
+  .maison-locked-text {
+    font-family: var(--font-title);
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  .maison-locked-sub {
+    font-size: 0.9rem;
+    color: rgba(232, 201, 164, 0.85);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .maison-body {
+    padding: 28px;
+  }
+
+  .maison-name {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .maison-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--text-soft);
+    font-size: 0.95rem;
+  }
+
+  .maison-info svg {
+    width: 18px;
+    height: 18px;
+    color: var(--piment);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* ===== CLICK & COLLECT ===== */
+  .collect {
+    background: linear-gradient(180deg, #F4EDE0 0%, var(--bg) 100%);
+  }
+
+  .collect-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .collect-mockup {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 32px;
+    border: 1px solid var(--border);
+  }
+
+  .mockup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+
+  .mockup-title {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    color: var(--volcano);
+  }
+
+  .mockup-step {
+    font-size: 0.78rem;
+    color: var(--text-soft);
+    background: var(--bg);
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+
+  .mockup-section-label {
+    font-size: 0.85rem;
+    color: var(--text-soft);
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  .creneaux {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .creneau {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 4px;
+    text-align: center;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .creneau:hover {
+    border-color: var(--piment);
+    color: var(--piment);
+  }
+
+  .creneau.active {
+    background: var(--volcano);
+    color: #fff;
+    border-color: var(--volcano);
+  }
+
+  .creneau.unavailable {
+    opacity: 0.4;
+    cursor: not-allowed;
+    text-decoration: line-through;
+  }
+
+  .mockup-cart {
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    margin-bottom: 18px;
+  }
+
+  .cart-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.92rem;
+    color: var(--text-soft);
+    margin-bottom: 6px;
+  }
+
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid var(--border);
+    font-weight: 700;
+    color: var(--volcano);
+  }
+
+  .mockup-cta {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .collect-text h2 {
+    margin-bottom: 24px;
+  }
+
+  .roi-box {
+    background: var(--volcano);
+    color: #fff;
+    padding: 24px 28px;
+    border-radius: var(--radius-md);
+    margin-top: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .roi-box::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 140px;
+    height: 140px;
+    background: var(--piment);
+    border-radius: 50%;
+    opacity: 0.15;
+  }
+
+  .roi-box p {
+    font-family: var(--font-title);
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
+  .roi-box .roi-author {
+    margin-top: 12px;
+    font-style: normal;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--sable-light);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* ===== TRAITEUR ===== */
+  .traiteur {
+    background: var(--volcano);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .traiteur::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .traiteur::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(194, 65, 12, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .traiteur .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .traiteur .section-overline { color: var(--sable); }
+  .traiteur h2 { color: #fff; }
+  .traiteur .section-intro { color: rgba(255, 255, 255, 0.85); }
+
+  .traiteur-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .traiteur-features {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .traiteur-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .traiteur-feature-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(212, 165, 116, 0.18);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sable);
+    flex-shrink: 0;
+  }
+
+  .traiteur-feature-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .traiteur-feature-text strong {
+    display: block;
+    color: #fff;
+    margin-bottom: 4px;
+    font-size: 1rem;
+  }
+
+  .traiteur-feature-text span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.92rem;
+  }
+
+  .form-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    padding: 36px;
+    box-shadow: var(--shadow-lg);
+    color: var(--text);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--text-soft);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    background: var(--bg);
+    color: var(--text);
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--piment);
+    background: #fff;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+
+  /* ===== AVIS ===== */
+  .avis {
+    background: var(--bg);
+  }
+
+  .avis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .avis-card {
+    background: var(--surface);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease;
+  }
+
+  .avis-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .avis-stars {
+    color: var(--piment);
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  .avis-text {
+    color: var(--text-soft);
+    font-style: italic;
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .avis-author {
+    font-weight: 600;
+    color: var(--volcano);
+    font-size: 0.92rem;
+  }
+
+  .avis-source {
+    font-size: 0.8rem;
+    color: var(--text-soft);
+    margin-top: 2px;
+  }
+
+  .avis-disclaimer {
+    text-align: center;
+    margin-top: 36px;
+    font-size: 0.78rem;
+    color: var(--text-soft);
+    font-style: italic;
+  }
+
+  /* ===== FOOTER ===== */
+  .site-footer {
+    background: var(--volcano-dark);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 70px 0 30px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand h3 {
+    color: #fff;
+    margin-bottom: 14px;
+    font-size: 1.6rem;
+  }
+
+  .footer-brand p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .footer-social a:hover {
+    background: var(--piment);
+    transform: translateY(-2px);
+  }
+
+  .footer-social svg {
+    width: 18px;
+    height: 18px;
+    color: #fff;
+  }
+
+  .footer-col h4 {
+    color: var(--sable);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+  }
+
+  .footer-col ul {
+    list-style: none;
+  }
+
+  .footer-col li {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.92rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .footer-col li svg {
+    width: 14px;
+    height: 14px;
+    color: var(--sable);
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .footer-bottom a {
+    color: var(--sable);
+    transition: color 0.2s ease;
+  }
+
+  .footer-bottom a:hover { color: #fff; }
+
+  /* ===== ANIMATIONS ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 960px) {
+    .histoire-grid,
+    .maisons-grid,
+    .collect-grid,
+    .traiteur-grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .histoire-image {
+      max-width: 460px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 720px) {
+    section { padding: 70px 0; }
+
+    .main-nav { display: none; }
+    .menu-toggle { display: inline-flex; }
+
+    .main-nav.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 18px 24px;
+      gap: 14px;
+    }
+
+    .header-cta span { display: none; }
+    .header-cta { padding: 10px 12px; }
+
+    .hero { min-height: 80vh; }
+    .hero-content { padding: 60px 20px; }
+
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+
+    .form-row { grid-template-columns: 1fr; }
+
+    .creneaux { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 420px) {
+    .container { padding: 0 18px; }
+    .header-inner { padding: 14px 18px; }
+    .logo { font-size: 1.25rem; }
+    .creneaux { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo"><img src="assets/logo.jpg" alt="La Case Toupin — Spécialités Réunionnaises" style="height:46px;width:auto;display:block;border-radius:6px;" /></a>
+    <nav class="main-nav" id="nav">
+      <a href="#histoire">Histoire</a>
+      <a href="#carte">Carte</a>
+      <a href="#collect">Click &amp; Collect</a>
+      <a href="#traiteur">Traiteur</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+33688654797" class="header-cta">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Commander</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<main>
+<section class="hero" id="top">
+  <div class="hero-content">
+    <span class="hero-overline">Restaurant réunionnais &mdash; Saint-Gaudens</span>
+    <h1>La Case Toupin</h1>
+    <p>L'âme de la Réunion à Saint-Gaudens. Cuisine créole, plats à emporter et traiteur événementiel.</p>
+    <div class="hero-ctas">
+      <a href="#collect" class="btn btn-primary">Commander en ligne</a>
+      <a href="#histoire" class="btn btn-outline">Découvrir la maison</a>
+    </div>
+  </div>
+</section>
+
+<!-- HISTOIRE -->
+<section class="histoire" id="histoire">
+  <div class="container">
+    <div class="histoire-grid">
+      <div class="histoire-image reveal">
+        <img src="assets/marie-portrait.jpg" alt="Marie Toupin, fondatrice de La Case Toupin, et son équipe" loading="lazy" />
+      </div>
+      <div class="histoire-text reveal">
+        <span class="section-overline">Notre histoire</span>
+        <h2 class="section-title">La cuisine de l'Île, à votre table.</h2>
+        <p>La Case Toupin, c'est l'envie de partager une cuisine vraie, fidèle aux saveurs de la Réunion, ici à Saint-Gaudens.</p>
+        <p>Des plats préparés à la maison, avec des produits choisis et un respect du temps qu'il faut pour bien faire les choses. Le rougail saucisses, le cari, les douceurs créoles &mdash; chaque recette se travaille avec soin, sans raccourci.</p>
+        <p>Que vous veniez chercher votre plat à emporter ou que vous nous confiiez votre événement, vous repartez avec un peu de l'âme de l'Île. C'est notre seule promesse, et on la tient à chaque service.</p>
+        <span class="signature">&mdash; Marie Toupin</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTE -->
+<section class="carte" id="carte">
+  <div class="container text-center">
+    <span class="section-overline">Nos spécialités</span>
+    <h2 class="section-title">La carte de la maison</h2>
+    <p class="section-intro">Quelques plats, préparés chaque jour avec exigence. Les classiques de l'Île, sans concession.</p>
+    <span class="ornament"></span>
+  </div>
+
+  <div class="container" style="margin-top: 48px;">
+    <div class="plats-grid">
+
+      <article class="plat-card reveal">
+        <div class="plat-image">
+          <span class="plat-badge">Le classique</span>
+          <img src="assets/plat-rougail.jpg" alt="Rougail saucisses La Case Toupin" loading="lazy" />
+        </div>
+        <div class="plat-body">
+          <div class="plat-header">
+            <h3 class="plat-name">Rougail saucisses</h3>
+            <span class="plat-price">12,50 &euro;</span>
+          </div>
+          <p class="plat-desc">Saucisse mijotée tomate-oignon, gingembre, piment. Servi avec riz blanc et lentilles.</p>
+        </div>
+      </article>
+
+      <article class="plat-card reveal">
+        <div class="plat-image">
+          <img src="assets/plat-carry-poulet.jpg" alt="Carry de poulet créole" loading="lazy" />
+        </div>
+        <div class="plat-body">
+          <div class="plat-header">
+            <h3 class="plat-name">Carry poulet</h3>
+            <span class="plat-price">12,50 &euro;</span>
+          </div>
+          <p class="plat-desc">Poulet mijoté aux épices créoles, sauce tomate fondante. Servi avec riz blanc.</p>
+        </div>
+      </article>
+
+      <article class="plat-card reveal">
+        <div class="plat-image">
+          <img src="assets/plat-carry-poisson.jpg" alt="Carry poisson + achard de légumes" loading="lazy" />
+        </div>
+        <div class="plat-body">
+          <div class="plat-header">
+            <h3 class="plat-name">Carry poisson</h3>
+            <span class="plat-price">16,50 &euro;</span>
+          </div>
+          <p class="plat-desc">Poisson mijoté épices créoles. Servi avec riz, lentilles et achard de légumes maison.</p>
+        </div>
+      </article>
+
+      <article class="plat-card reveal">
+        <div class="plat-image">
+          <span class="plat-badge">Signature</span>
+          <img src="assets/plat-carry-crevette.jpg" alt="Carry crevette au lait de coco" loading="lazy" />
+        </div>
+        <div class="plat-body">
+          <div class="plat-header">
+            <h3 class="plat-name">Carry crevette lait de coco</h3>
+            <span class="plat-price">16,50 &euro;</span>
+          </div>
+          <p class="plat-desc">Crevettes mijotées dans une sauce onctueuse au lait de coco. Notre plat signature.</p>
+        </div>
+      </article>
+
+      <article class="plat-card reveal">
+        <div class="plat-image">
+          <img src="assets/dessert-chemin-fer.jpg" alt="Chemin de fer fruit de la passion" loading="lazy" />
+        </div>
+        <div class="plat-body">
+          <div class="plat-header">
+            <h3 class="plat-name">Chemin de fer passion</h3>
+            <span class="plat-price">4,00 &euro;</span>
+          </div>
+          <p class="plat-desc">La pâtisserie iconique de la Réunion, version fruit de la passion. La part servie avec orchidée.</p>
+        </div>
+      </article>
+
+      <article class="plat-card reveal">
+        <div class="plat-image">
+          <img src="assets/dessert-chemin-fer-luxe.jpg" alt="Chemin de fer fruit de la passion entier" loading="lazy" />
+        </div>
+        <div class="plat-body">
+          <div class="plat-header">
+            <h3 class="plat-name">Chemin de fer entier</h3>
+            <span class="plat-price">à emporter</span>
+          </div>
+          <p class="plat-desc">Le chemin de fer entier pour vos repas de famille. Plusieurs parfums au choix : passion, pistache, framboise, coco.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAISONS -->
+<section class="maisons" id="maisons">
+  <div class="container text-center">
+    <span class="section-overline">Nos adresses</span>
+    <h2 class="section-title">Nos deux maisons</h2>
+    <p class="section-intro">La Case Toupin grandit. Deux lieux, une seule cuisine, la même exigence.</p>
+    <span class="ornament"></span>
+  </div>
+
+  <div class="container" style="margin-top: 48px;">
+    <div class="maisons-grid">
+
+      <div class="maison-card reveal">
+        <div class="maison-map">
+          <iframe
+            src="https://www.google.com/maps?q=1+rue+du+Pradet+31800+Saint-Gaudens&output=embed"
+            loading="lazy"
+            title="Carte La Case Toupin Saint-Gaudens"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="maison-body">
+          <h3 class="maison-name">La Case Toupin &mdash; rue du Pradet</h3>
+          <div class="maison-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>1 rue du Pradet, 31800 Saint-Gaudens</span>
+          </div>
+          <div class="maison-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Service midi &amp; soir &mdash; appelez pour réserver</span>
+          </div>
+          <div class="maison-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>06 88 65 47 97</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="maison-card reveal">
+        <div class="maison-map">
+          <iframe
+            src="https://www.google.com/maps?q=2+Place+Nationale+Jean+Jaur%C3%A8s+31800+Saint-Gaudens&output=embed"
+            loading="lazy"
+            title="Carte 2e maison Place Jean Jaurès"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="maison-body">
+          <h3 class="maison-name">Notre 2<sup>e</sup> maison &mdash; Place Jean Jaurès</h3>
+          <div class="maison-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>2 Place Nationale Jean Jaurès, 31800 Saint-Gaudens</span>
+          </div>
+          <div class="maison-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Service midi &amp; soir &mdash; appelez pour réserver</span>
+          </div>
+          <div class="maison-info">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>06 88 65 47 97</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CLICK & COLLECT -->
+<section class="collect" id="collect">
+  <div class="container">
+    <div class="collect-grid">
+
+      <div class="collect-text reveal">
+        <span class="section-overline">Click &amp; Collect</span>
+        <h2 class="section-title">Commandez en direct, on prépare en cuisine.</h2>
+        <p class="section-intro">Choisissez vos plats, votre créneau, vous passez récupérer. Pas d'attente, pas de file. Pas de commission prélevée par une plateforme.</p>
+
+        <div class="roi-box">
+          <p>« Commandez chez nous, vous payez moins cher. La maison garde sa marge, vous gardez le sourire. »</p>
+          <span class="roi-author">&mdash; La Case Toupin</span>
+        </div>
+      </div>
+
+      <div class="collect-mockup reveal">
+        <div class="mockup-header">
+          <span class="mockup-title">Votre commande</span>
+          <span class="mockup-step">Étape 2 / 3 &mdash; Créneau</span>
+        </div>
+
+        <div style="margin: -16px 0 18px; padding: 12px; background: #FAF6F0; border-radius: 10px; display: flex; gap: 12px; align-items: center;">
+          <img src="assets/vitrine-barquettes.jpg" alt="Vitrine barquettes La Case Toupin" style="width:84px;height:84px;object-fit:cover;border-radius:8px;flex-shrink:0;" />
+          <div style="font-size: 0.82rem; color: var(--text-soft); line-height: 1.4;">
+            <strong style="color: var(--text);">Vos plats déjà conditionnés.</strong><br/>
+            Récupération directe en boutique &mdash; pas de file, pas d'attente.
+          </div>
+        </div>
+
+        <div class="mockup-section-label">Choisissez votre créneau de retrait</div>
+        <div class="creneaux">
+          <div class="creneau">12h00</div>
+          <div class="creneau">12h15</div>
+          <div class="creneau active">12h30</div>
+          <div class="creneau">12h45</div>
+          <div class="creneau">13h00</div>
+          <div class="creneau unavailable">13h15</div>
+          <div class="creneau">13h30</div>
+          <div class="creneau">13h45</div>
+        </div>
+
+        <div class="mockup-cart">
+          <div class="cart-line"><span>1 &times; Carry crevette lait coco</span><span>16,50 &euro;</span></div>
+          <div class="cart-line"><span>1 &times; Chemin de fer passion</span><span>4,00 &euro;</span></div>
+          <div class="cart-total"><span>Total</span><span>20,50 &euro;</span></div>
+        </div>
+
+        <button class="btn btn-primary mockup-cta" type="button">Confirmer ma commande</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRAITEUR -->
+<section class="traiteur" id="traiteur">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 56px;">
+      <span class="section-overline">Traiteur &mdash; B2B &amp; particuliers</span>
+      <h2 class="section-title">La cuisine réunionnaise s'invite à votre table.</h2>
+      <p class="section-intro">Mariages, baptêmes, séminaires, anniversaires. La Case Toupin se déplace, dresse et régale &mdash; jusqu'à 200 couverts.</p>
+    </div>
+
+    <div class="traiteur-gallery reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:56px;">
+      <img src="assets/traiteur-box.jpg" alt="Box traiteur compartimentée — La Case Toupin" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;" />
+      <img src="assets/traiteur-plateau.jpg" alt="Plateau apéritif traiteur" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;" />
+      <img src="assets/apero-samosas.jpg" alt="Samosas maison La Case Toupin" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;" />
+    </div>
+
+    <div class="traiteur-grid">
+      <div class="traiteur-features reveal">
+        <div class="traiteur-feature">
+          <div class="traiteur-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div class="traiteur-feature-text">
+            <strong>De 20 à 200 personnes</strong>
+            <span>Buffet créole, plat unique ou menu complet, adapté à votre événement.</span>
+          </div>
+        </div>
+        <div class="traiteur-feature">
+          <div class="traiteur-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18l-2 12H5L3 7z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg></div>
+          <div class="traiteur-feature-text">
+            <strong>Matériel &amp; service inclus</strong>
+            <span>Plateaux, réchauds, vaisselle, serveurs si besoin. Vous n'avez qu'à recevoir.</span>
+          </div>
+        </div>
+        <div class="traiteur-feature">
+          <div class="traiteur-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div class="traiteur-feature-text">
+            <strong>Devis en 48h</strong>
+            <span>Réponse rapide, prix clairs, aucun frais caché. Marie répond elle-même.</span>
+          </div>
+        </div>
+        <div class="traiteur-feature">
+          <div class="traiteur-feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+          <div class="traiteur-feature-text">
+            <strong>Séminaires entreprise</strong>
+            <span>Pause déjeuner originale pour vos équipes. Comminges &amp; alentours.</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form-card reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Demande envoyée — Marie vous rappelle'; this.querySelector('button').disabled = true;">
+        <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Demander mon devis</h3>
+        <p style="color: var(--text-soft); font-size: 0.92rem; margin-bottom: 22px;">Parlez-nous de votre événement.</p>
+
+        <div class="form-row">
+          <div class="form-group" style="margin-bottom: 0;">
+            <label for="t-nom">Nom complet</label>
+            <input type="text" id="t-nom" required />
+          </div>
+          <div class="form-group" style="margin-bottom: 0;">
+            <label for="t-tel">Téléphone</label>
+            <input type="tel" id="t-tel" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="t-email">Email</label>
+          <input type="email" id="t-email" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="t-pers">Nombre de personnes</label>
+            <input type="number" id="t-pers" min="1" placeholder="Ex : 50" required />
+          </div>
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="t-date">Date de l'événement</label>
+            <input type="date" id="t-date" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="t-msg">Message &mdash; type d'événement, envies, contraintes</label>
+          <textarea id="t-msg" placeholder="Ex : mariage, 80 personnes, buffet créole avec deux plats chauds…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Demander mon devis</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section class="avis" id="avis">
+  <div class="container text-center">
+    <span class="section-overline">Vos avis Google, en direct</span>
+    <h2 class="section-title">La parole à vos clients.</h2>
+    <p class="section-intro">Cette section synchronise automatiquement vos avis Google Business Profile. Plus vos clients laissent d'avis, plus vous remontez dans la recherche locale Saint-Gaudens.</p>
+    <span class="ornament"></span>
+  </div>
+
+  <div class="container" style="margin-top: 48px;">
+    <div style="background: var(--surface); border-radius: 16px; padding: 36px 28px; box-shadow: 0 8px 24px rgba(31, 77, 58, 0.08); max-width: 720px; margin: 0 auto; text-align: center;">
+      <div style="font-size: 3rem; color: var(--volcano); margin-bottom: 8px; font-family: var(--font-title); letter-spacing: 4px;">★ ★ ★ ★ ★</div>
+      <p style="color: var(--text-soft); margin-bottom: 24px;">Note Google moyenne &mdash; affichée en temps réel sur votre fiche, alimentée par vos vrais clients.</p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 32px 0;">
+        <div style="text-align: left; padding: 16px; background: var(--bg); border-radius: 10px;">
+          <strong style="color: var(--volcano); display: block; margin-bottom: 6px;">Avant</strong>
+          <span style="color: var(--text-soft); font-size: 0.92rem;">4 avis Uber Eats invisibles dans l'algorithme.</span>
+        </div>
+        <div style="text-align: left; padding: 16px; background: rgba(194, 65, 12, 0.06); border-radius: 10px; border: 1px solid rgba(194, 65, 12, 0.15);">
+          <strong style="color: var(--paprika); display: block; margin-bottom: 6px;">Après</strong>
+          <span style="color: var(--text); font-size: 0.92rem;">Demande d'avis automatique par SMS après chaque commande &mdash; les étoiles arrivent toutes seules.</span>
+        </div>
+      </div>
+
+      <a href="#collect" class="btn btn-primary" style="margin-top: 8px;">Activer la collecte d'avis</a>
+    </div>
+
+    <p class="avis-disclaimer" style="margin-top: 32px;">Maquette &mdash; les avis affichés en production proviendront uniquement de votre fiche Google Business officielle.</p>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>La Case Toupin</h3>
+        <p>L'âme de la Réunion à Saint-Gaudens. Cuisine créole, traiteur événementiel, click &amp; collect.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/61571827814505" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1 rue du Pradet<br/>31800 Saint-Gaudens</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>06 88 65 47 97</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Horaires</h4>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Horaires d'ouverture<br/>à confirmer avec la maison</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal" style="border-top: 1px solid rgba(255,255,255,0.12); padding: 16px 0; margin-top: 24px; text-align: center; font-size: 0.86rem;">
+      <a href="mentions-legales.html" style="color: rgba(255,255,255,0.85); text-decoration: none; margin: 0 10px;">Mentions légales</a>
+      <span style="opacity: 0.4;">·</span>
+      <a href="mentions-legales.html#confidentialite" style="color: rgba(255,255,255,0.85); text-decoration: none; margin: 0 10px;">Politique de confidentialité</a>
+      <span style="opacity: 0.4;">·</span>
+      <a href="mentions-legales.html#cgv" style="color: rgba(255,255,255,0.85); text-decoration: none; margin: 0 10px;">CGV</a>
+      <span style="opacity: 0.4;">·</span>
+      <a href="mentions-legales.html#cookies" style="color: rgba(255,255,255,0.85); text-decoration: none; margin: 0 10px;">Cookies</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 La Case Toupin &mdash; Exploitant : Marie TOUPIN EI, SIRET 802 848 846 00043, TVA non applicable art. 293 B du CGI.</span>
+      <span>Site édité, hébergé et maintenu par <a href="https://ninetechnologies.fr" target="_blank" rel="noopener">Nine Technologies</a> &mdash; Marc-Antoine Pavadé EI, SIRET 918 444 316 00049.</span>
+    </div>
+    <div style="text-align: center; opacity: 0.5; font-size: 0.72rem; padding: 8px 0; color: rgba(255,255,255,0.7);">Site en cours d'évolution &mdash; mai 2026</div>
+  </div>
+</footer>
+
+<script>
+  // Menu mobile toggle
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('nav');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => nav.classList.remove('open'));
+    });
+  }
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => io.observe(el));
+
+  // Creneaux interaction
+  document.querySelectorAll('.creneau:not(.unavailable)').forEach(c => {
+    c.addEventListener('click', () => {
+      document.querySelectorAll('.creneau').forEach(x => x.classList.remove('active'));
+      c.classList.add('active');
+    });
+  });
+</script>
+
+<!-- Site La Case Toupin - réalisé par Nine Technologies - mise en ligne 02/05/2026 -->
+</body>
+</html>
